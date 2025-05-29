@@ -207,7 +207,7 @@
                 lateThreshold = new Date(`1970-01-01T09:40`);
             }
 
-            if (start > lateThreshold) {
+            if (start > normalWorkStart) {
                 isLate = true;
                 lateTime = (start - normalWorkStart) / (1000 * 60);
             }
@@ -369,4 +369,4 @@
     </script>
 </body>
 
-</html>
+</html> 
